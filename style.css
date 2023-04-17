@@ -206,7 +206,7 @@ h1{
 .fav-img{
   position: absolute;
   top: 6rem;
-  width: 32rem;
+  width: 35rem;
   left: 5rem;
 }
 
@@ -292,7 +292,7 @@ h1{
   .fav-img{
     position: absolute;
     left: 0.3rem;
-    top: 18rem;
+    top: 22rem;
     width: 25rem;
   }
 }
@@ -302,7 +302,7 @@ h1{
   .fav-img{
     position: absolute;
     left: -0.2rem;
-    top: 18rem;
+    top: 22rem;
     width: 25rem;
   }
 }
@@ -311,7 +311,7 @@ h1{
   .fav-img{
     position: absolute;
     left: -1rem;
-    top: 18rem;
+    top: 22rem;
     width: 25rem;
   }
 }
@@ -320,7 +320,7 @@ h1{
   .fav-img{
     position: absolute;
     left: -1.4rem;
-    top: 18rem;
+    top: 22rem;
     width: 25rem;
   }
 }
