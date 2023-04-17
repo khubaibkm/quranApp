@@ -203,11 +203,12 @@ h1{
   font-size: 30px;
 }
 
-#sketch-container{
+.fav-img{
   position: absolute;
-  top: 8rem;
+  top: 6rem;
+  width: 32rem;
+  left: 5rem;
 }
-
 
 
 /* ------------------------------------------------------------------------------------ */
@@ -260,9 +261,6 @@ h1{
         height: 24rem !important;
       }
 
-      #sketch-container{
-        display: none;
-      }
 
       .containerr{
         text-align: center;
@@ -295,6 +293,7 @@ h1{
     position: absolute;
     left: 0.3rem;
     top: 18rem;
+    width: 25rem;
   }
 }
 
@@ -304,6 +303,7 @@ h1{
     position: absolute;
     left: -0.2rem;
     top: 18rem;
+    width: 25rem;
   }
 }
 
@@ -312,6 +312,7 @@ h1{
     position: absolute;
     left: -1rem;
     top: 18rem;
+    width: 25rem;
   }
 }
 
@@ -320,25 +321,20 @@ h1{
     position: absolute;
     left: -1.4rem;
     top: 18rem;
+    width: 25rem;
   }
 }
 
 @media screen and (width: 1024px){
-  #sketch-container{
-    display: none;
-  }
   .containerr{
     position: relative;
     left: -2rem;
   }
 
-}
-
-
-@media screen and (min-width: 600px){
   .fav-img{
     display: none !important;
   }
+
 }
 
 
