@@ -85,6 +85,7 @@ function playNextAudio() {
   
   // Hide the play button and show the pause button
   btnplay.style.display = "none";
+  btnresume.style.display = "none";
   btnpause.style.display = "block";
   
   isPlaying = true;
@@ -97,6 +98,7 @@ function playNextAudio() {
             
     // Show the play button and hide the pause button
     btnplay.style.display = "block";
+    btnresume.style.display = "none";
     btnpause.style.display = "none";
             
     // Increment the current audio index and play the next audio file
@@ -142,7 +144,9 @@ function pauseAudio() {
     isPlaying = false;
 
     // Hide the pause button and show the resume button
+    
     btnpause.style.display = "none";
+    btnplay.style.display = "none";
     btnresume.style.display = "block";
   }
 }
@@ -160,6 +164,7 @@ function resumeAudio() {
 
     // Hide the resume button and show the pause button
     btnresume.style.display = "none";
+    btnplay.style.display = "none";
     btnpause.style.display = "block";
 
     isPlaying = true;
@@ -185,16 +190,16 @@ btnresume.addEventListener("click", resumeAudio);
 
 // page 3 Animation
 let sketch = function(p) {
-  let dim_init = 40;
-  let dim_delta = 4;
+  let dim_init = 50;
+  let dim_delta = 5;
   let chaos_init = .2;
   let chaos_delta = 0.12;
-  let chaos_mag = 20;
+  let chaos_mag = 40;
   let ox = p.random();
   let oy = p.random();
   let oz = p.random();
   let isPlaying = true;
-  let rings = 40; // default value
+  let rings = 30; // default value
   
   p.setup = function() {
     let startButton = document.getElementById("play-btn")
@@ -210,7 +215,7 @@ let sketch = function(p) {
     
     // adjust number of rings based on screen size
     if (canvasWidth <= 1500) {
-      rings = 40;
+      rings = 30;
     } else if (canvasWidth <= 500) {
       rings = 10;
     }
