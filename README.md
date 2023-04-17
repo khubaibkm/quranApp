@@ -1,1 +1,1 @@
-##Play&pray App By Khubaib Ahmad
+## Play&pray App By Khubaib Ahmad
