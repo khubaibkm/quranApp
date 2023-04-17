@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play&Pray</title>
+  <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.js"></script>
+</head>
+<body>
+
+
+<!-- page2 -->
+    <div id="container2">
+        <div id="element"></div>
+        <div id="number-input">
+            <p class="heading1">Enter the Surah Number</p>
+            <input type="number" name="Surah" id="surah"><hr>
+            <button class="btn2">Play</button>
+        </div>
+      </div>
+
+
+<!-- page3 -->   
+ 
+<div class="containerr">
+    <div id="container3"></div>
+    <span class="firsth"><h1 style="color: rgb(1, 221, 221);" class="headings"></h1></span><br><br>
+    <h1 class="headings"></h1>
+    <h1 class="headings"></h1>
+    <center><button class="btn3" id="play-btn" style="font-size: 26px; padding: 7px; height: 70px;" >Play</button>
+    <button class="btn3" id="pause-btn" style="display: none;"><img width="30px" src="icons/pause.png" alt=""></button>
+    <button class="btn3" id="resume-btn" style="display: none;"><img width="30px" src="icons/play.png" alt=""></button>
+      </div></div>
+      <img class="fav-img" src="icons/favicon.png" style="display: none; width:25rem;" alt="">
+    
+      <div id="sketch-container"></div>
+    
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js" integrity="sha512-lH/5/byfwH0bqySiiSINJJoEoWFEBGKgOwsnAlZZPviNJI1DDBVXjPHgEkM0fowfOp6NMBAN4ROAYjx+uEkEjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+VANTA.NET({
+  el: "#element",
+  backgroundColor: 'rgb(35, 35, 35)',
+  color: 'white',
+  points: 12.00,
+  maxDistance: 20.00,
+  spacing: 22.00
+})
+
+</script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+/* css of page 1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    position: relative;
+    top: 15rem;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 3s ease-in-out, transform 2s ease-in-out;
+ }
+
+.main-img{
+    width: 50rem;
+}
+
+  .container.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  .containerbtn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+    display: none;
+}
+
+  .btn1 {
+    font-family: 'Cinzel', serif;
+    padding: .8rem 1.5rem;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .btn1:hover{
+    background-color: white;
+    color: rgb(92, 92, 92);
+  }
+  
+  
+
+  
+  /* css of page 2 */
+  
+  #container2 {
+    font-family: 'Cinzel', serif;
+  }
+  .vanta-canvas{
+    position: absolute;
+    z-index: 1;
+  }
+  #element {
+    position:fixed;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #number-input {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+   height: 320px;
+   border-radius: 10px;
+   padding: 20px;
+   font-size: 24px;
+   text-align: center;
+   z-index: 1;
+   background-color: rgb(65, 65, 65);
+   opacity: 1;
+   backdrop-filter: blur(5px);
+   background-color: transparent;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 50px rgba(57, 57, 57, 0.2);
+}
+
+.heading1{
+    font-size: 60px;
+    margin: 30px 0;
+    color: rgb(1, 221, 221);
+}
+
+#surah{
+    height: 5rem;
+    width: 8rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+}
+
+hr {
+  width: 8rem;
+  margin: auto;
+  color: white;
+  border-style:solid;
+  border-radius: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border: none;
+}
+
+.btn2 {
+    font-family: 'Cinzel', serif;
+    padding: .4rem 1.5rem;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn2:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(92, 92, 92);
+  }
+
+
+  /* css of page 3 */
+
+  .btn3{
+    font-family: 'Cinzel', serif;
+    padding: .4rem 1.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    font-size: 3rem;
+    position: relative;
+    bottom: -5.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#defaultCanvas0{
+  position: relative;
+  bottom: 7rem;
+  z-index: -1;
+}
+
+h1{
+  color: white;
+}
+
+
+.containerr{
+  font-family: 'Cinzel', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 12rem;
+  left: 17rem;
+  display: none;
+  font-size: 22px;
+}
+
+.firsth{
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+}
+
+#sketch-container{
+  position: absolute;
+  top: 8rem;
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+/* media queries */
+
+
+  @media screen and (max-width: 800px) {
+
+    /* media of page 1 */
+      .container{
+          position: relative;
+        }
+        .main-img{
+        width: 21rem;
+    }
+    .btn1{
+        padding: .5rem 1rem;
+        font-size: .7rem;
+
+    }
+ 
+
+    /* media of page 2 */
+    #surah{
+        height: 3rem;
+    }
+    .heading1{
+    font-size: 40px;
+    }
+    #number-input{
+        width: 19.5rem;
+    }
+    .btn2{
+            padding: .5rem 1rem;
+            font-size: 1rem;
+
+        }
+
+     /* media of page 3 */
+     .btn3{
+      font-size: 3rem;
+      position: relative;
+      bottom: 7.5rem; }
+
+      #defaultCanvas0{
+        width: 24rem !important;
+        height: 24rem !important;
+      }
+
+      #sketch-container{
+        display: none;
+      }
+
+      .containerr{
+        text-align: center;
+        padding: 10px;
+        font-size: 11px;
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+      }
+
+      .firsth{
+        font-size: 14px;
+      }
+      
+      .btn3{
+        position: relative;
+        top: 6rem;
+      }
+
+      .main-img{
+        width: 22rem;
+      }
+
+      
+}
+
+
+@media screen and (max-width: 500px){
+  .fav-img{
+    position: absolute;
+    left: 0.3rem;
+    top: 18rem;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  .fav-img{
+    position: absolute;
+    left: -0.2rem;
+    top: 18rem;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .fav-img{
+    position: absolute;
+    left: -1rem;
+    top: 18rem;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .fav-img{
+    position: absolute;
+    left: -1.4rem;
+    top: 18rem;
+  }
+}
+
+@media screen and (width: 1024px){
+  #sketch-container{
+    display: none;
+  }
+  .containerr{
+    position: relative;
+    left: -2rem;
+  }
+
+}
+
+
+@media screen and (min-width: 600px){
+  .fav-img{
+    display: none !important;
+  }
+}
+
+
